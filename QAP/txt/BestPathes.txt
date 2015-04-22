@@ -1,0 +1,857 @@
+============================== New Run ==============================
+Number of Ants:
+10
+Distances:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   13   104   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63   114   99   98    0    42   81    97   78
+65   79   104   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+103  19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    0     0    0    952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 956289
+Path: 4 7 3 2 0 6 1 5 8 9 
+
+New best solution found at iteration: 3
+Cost: 918367
+Path: 3 2 6 4 7 0 1 5 8 9 
+
+New best solution found at iteration: 14
+Cost: 873651
+Path: 4 5 8 7 6 3 0 2 1 9 
+
+New best solution found at iteration: 23
+Cost: 760706
+Path: 4 3 8 7 1 5 6 9 0 2 
+
+New best solution found at iteration: 26
+Cost: 626797
+Path: 6 3 8 7 1 5 0 9 4 2 
+
+New best solution found at iteration: 29
+Cost: 619468
+Path: 0 3 8 7 1 5 6 9 4 2 
+
+============================== New Run ==============================
+Number of Ants:
+10
+Distances:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   13   104   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63   114   99   98    0    42   81    97   78
+65   79   104   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+103  19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    0     0    0    952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 956289
+Path: 4 7 3 2 0 6 1 5 8 9 
+
+New best solution found at iteration: 3
+Cost: 918367
+Path: 3 2 6 4 7 0 1 5 8 9 
+
+New best solution found at iteration: 14
+Cost: 873651
+Path: 4 5 8 7 6 3 0 2 1 9 
+
+New best solution found at iteration: 23
+Cost: 760706
+Path: 4 3 8 7 1 5 6 9 0 2 
+
+New best solution found at iteration: 26
+Cost: 626797
+Path: 6 3 8 7 1 5 0 9 4 2 
+
+New best solution found at iteration: 29
+Cost: 619468
+Path: 0 3 8 7 1 5 6 9 4 2 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   13   104   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63   114   99   98    0    42   81    97   78
+65   79   104   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+103  19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    0     0    0    952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 956289
+Path: 4 7 3 2 0 6 1 5 8 9 
+
+New best solution found at iteration: 3
+Cost: 918367
+Path: 3 2 6 4 7 0 1 5 8 9 
+
+New best solution found at iteration: 14
+Cost: 873651
+Path: 4 5 8 7 6 3 0 2 1 9 
+
+New best solution found at iteration: 23
+Cost: 760706
+Path: 4 3 8 7 1 5 6 9 0 2 
+
+New best solution found at iteration: 26
+Cost: 626797
+Path: 6 3 8 7 1 5 0 9 4 2 
+
+New best solution found at iteration: 29
+Cost: 619468
+Path: 0 3 8 7 1 5 6 9 4 2 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   13   104   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63   114   99   98    0    42   81    97   78
+65   79   104   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+103  19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    0     0    0    952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 951030
+Path: 0 3 9 2 4 5 1 7 8 6 
+
+New best solution found at iteration: 5
+Cost: 918367
+Path: 3 2 6 4 7 0 1 5 8 9 
+
+New best solution found at iteration: 16
+Cost: 873651
+Path: 4 5 8 7 6 3 0 2 1 9 
+
+New best solution found at iteration: 25
+Cost: 760706
+Path: 4 3 8 7 1 5 6 9 0 2 
+
+New best solution found at iteration: 28
+Cost: 626797
+Path: 6 3 8 7 1 5 0 9 4 2 
+
+New best solution found at iteration: 31
+Cost: 619468
+Path: 0 3 8 7 1 5 6 9 4 2 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+200
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   13   104   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63   114   99   98    0    42   81    97   78
+65   79   104   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+103  19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    0     0    0    952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 951030
+Path: 0 3 9 2 4 5 1 7 8 6 
+
+New best solution found at iteration: 5
+Cost: 918367
+Path: 3 2 6 4 7 0 1 5 8 9 
+
+New best solution found at iteration: 16
+Cost: 873651
+Path: 4 5 8 7 6 3 0 2 1 9 
+
+New best solution found at iteration: 25
+Cost: 760706
+Path: 4 3 8 7 1 5 6 9 0 2 
+
+New best solution found at iteration: 28
+Cost: 626797
+Path: 6 3 8 7 1 5 0 9 4 2 
+
+New best solution found at iteration: 31
+Cost: 619468
+Path: 0 3 8 7 1 5 6 9 4 2 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+200
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   13   104   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63   114   99   98    0    42   81    97   78
+65   79   104   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+103  19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    56    34   8888 952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 957890
+Path: 0 3 9 2 4 5 1 7 8 6 
+
+New best solution found at iteration: 5
+Cost: 922139
+Path: 3 2 6 4 7 0 1 5 8 9 
+
+New best solution found at iteration: 16
+Cost: 877825
+Path: 4 5 8 7 6 3 0 2 1 9 
+
+New best solution found at iteration: 25
+Cost: 765764
+Path: 4 3 8 7 1 5 6 9 0 2 
+
+New best solution found at iteration: 28
+Cost: 633623
+Path: 6 3 8 7 1 5 0 9 4 2 
+
+New best solution found at iteration: 31
+Cost: 626294
+Path: 0 3 8 7 1 5 6 9 4 2 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   13   104   72    97   73
+10   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63   114   99   98    0    42   81    97   78
+65   79   104   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+103  19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    56    34   8888 952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 957890
+Path: 0 3 9 2 4 5 1 7 8 6 
+
+New best solution found at iteration: 5
+Cost: 922139
+Path: 3 2 6 4 7 0 1 5 8 9 
+
+New best solution found at iteration: 16
+Cost: 877825
+Path: 4 5 8 7 6 3 0 2 1 9 
+
+New best solution found at iteration: 25
+Cost: 765764
+Path: 4 3 8 7 1 5 6 9 0 2 
+
+New best solution found at iteration: 28
+Cost: 633623
+Path: 6 3 8 7 1 5 0 9 4 2 
+
+New best solution found at iteration: 31
+Cost: 626294
+Path: 0 3 8 7 1 5 6 9 4 2 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+200
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   103   14   72    97   73
+40   45    21    0   53   99     7   50   102   51
+29   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+3    19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    0    2106  1    0    0     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   2417
+1096  0    0    56    34   8888 952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    546   0    42    1213
+0     0    0    53    0    546  7     2649 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 748785
+Path: 7 5 0 4 6 3 1 2 8 9 
+
+New best solution found at iteration: 4
+Cost: 748049
+Path: 7 5 0 4 1 3 6 2 8 9 
+
+New best solution found at iteration: 8
+Cost: 629721
+Path: 5 6 1 8 4 3 7 2 9 0 
+
+New best solution found at iteration: 18
+Cost: 582952
+Path: 2 3 1 8 4 6 7 5 9 0 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+200
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   103   14   72    97   73
+40   45    21    0   53   99     7   50   102   51
+29   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+3    19    97  102   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1    0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56   0    42    113
+0     0    0    53    0    546  7     26429 0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 587928
+Path: 7 5 0 6 4 3 1 2 8 9 
+
+New best solution found at iteration: 6
+Cost: 548997
+Path: 2 3 1 8 4 6 7 5 9 0 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   103   14   72    97   73
+40   45    21    0   53   99     7   50   102   51
+29   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0    13    3
+3    19    97   10   54   97   234   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 366259
+Path: 5 0 1 8 4 6 7 2 9 3 
+
+New best solution found at iteration: 7
+Cost: 365597
+Path: 2 3 1 8 4 6 7 5 9 0 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+No Updates Limit:
+20
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22    19   19
+78   65     0   21   44   13   14   72     97   73
+40   45    21    0   53   99     7   50   102   51
+29   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0  100    57   98
+37   22    72   50   93    8   100    0   130    3
+3    19    97   12   54   97    24   10     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 366259
+Path: 5 0 1 8 4 6 7 2 9 3 
+
+New best solution found at iteration: 7
+Cost: 365597
+Path: 2 3 1 8 4 6 7 5 9 0 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+No Updates Limit:
+15
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   14    14   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0   10    57   98
+37   22    72   50   93   81    10    0    13    3
+103  109   97   102  54   97    57   13     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 668018
+Path: 0 3 9 2 4 5 6 8 1 7 
+
+New best solution found at iteration: 2
+Cost: 640026
+Path: 4 6 9 5 0 2 3 8 7 1 
+
+New best solution found at iteration: 4
+Cost: 507657
+Path: 0 5 8 7 4 6 1 2 3 9 
+
+New best solution found at iteration: 7
+Cost: 499422
+Path: 0 5 8 4 7 6 1 2 3 9 
+
+New best solution found at iteration: 20
+Cost: 491855
+Path: 3 2 1 0 7 4 8 5 6 9 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+No Updates Limit:
+5
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   14    14   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0   10    57   98
+37   22    72   50   93   81    10    0    13    3
+103  109   97   102  54   97    57   13     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 668018
+Path: 0 3 9 2 4 5 6 8 1 7 
+
+New best solution found at iteration: 2
+Cost: 640026
+Path: 4 6 9 5 0 2 3 8 7 1 
+
+New best solution found at iteration: 4
+Cost: 507657
+Path: 0 5 8 7 4 6 1 2 3 9 
+
+New best solution found at iteration: 7
+Cost: 499422
+Path: 0 5 8 4 7 6 1 2 3 9 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+No Updates Limit:
+15
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   14    14   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0   10    57   98
+37   22    72   50   93   81    10    0    13    3
+103  109   97   102  54   97    57   13     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 668018
+Path: 0 3 9 2 4 5 6 8 1 7 
+
+New best solution found at iteration: 2
+Cost: 640026
+Path: 4 6 9 5 0 2 3 8 7 1 
+
+New best solution found at iteration: 4
+Cost: 507657
+Path: 0 5 8 7 4 6 1 2 3 9 
+
+New best solution found at iteration: 7
+Cost: 499422
+Path: 0 5 8 4 7 6 1 2 3 9 
+
+New best solution found at iteration: 20
+Cost: 491855
+Path: 3 2 1 0 7 4 8 5 6 9 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+No Updates Limit:
+15
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   14    14   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0   10    57   98
+37   22    72   50   93   81    10    0    13    3
+103  109   97   102  54   97    57   13     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+No Updates Limit:
+15
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   14    14   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0   10    57   98
+37   22    72   50   93   81    10    0    13    3
+103  109   97   102  54   97    57   13     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 640026
+Path: 4 6 9 5 0 2 3 8 7 1 
+
+New best solution found at iteration: 3
+Cost: 507657
+Path: 0 5 8 7 4 6 1 2 3 9 
+
+New best solution found at iteration: 6
+Cost: 499422
+Path: 0 5 8 4 7 6 1 2 3 9 
+
+New best solution found at iteration: 19
+Cost: 491855
+Path: 3 2 1 0 7 4 8 5 6 9 
+
+New best solution found at iteration: 35
+Cost: 486180
+Path: 3 2 8 7 4 1 6 5 0 9 
+
+New best solution found at iteration: 38
+Cost: 473917
+Path: 3 2 8 4 7 1 6 5 0 9 
+
+============================== New Run ==============================
+Pheromone Increment:
+1
+Extra Pheromone Increment:
+5
+No Updates Limit:
+15
+Number of Iterations:
+100
+Number of Ants:
+10
+Distances Matrix:
+0    19    78   60   79   45    65   37   103   34
+19    0    65   45   76   63    79   22   109   19
+78   65     0   21   44   14    14   72    97   73
+60   45    21    0   53   99    97   50   102   51
+79   76    44   53    0   98    74   93    54   92
+45   63    14   99   98    0    42   81    97   78
+65   79    14   97   74   42     0   10    57   98
+37   22    72   50   93   81    10    0    13    3
+103  109   97   102  54   97    57   13     0  128
+34   19    73   51   92   78    98    3   128    0
+Flows Matrix:
+0     1    0    2     0    0    15    0    0     172
+171   0    0    14    0    61   30    0    886   45
+43    0    2221 2106  1    0    1     0    0     0
+361   0    0    0     0    0    0     0    0     0
+2     123  1    0     0    49   18    0    335   247
+1096  0    0    56    34   88   952   5    0     0
+207   370  27   0     4    0    0     0    202   0
+16    58   0    0     0    0    56    0    42    113
+0     0    0    53    0    546  7     229  0     86
+0     0    6707 1     12   7124 1     0    1     0
+
+New best solution found at iteration: 1
+Cost: 640026
+Path: 4 6 9 5 0 2 3 8 7 1 
+
+New best solution found at iteration: 3
+Cost: 507657
+Path: 0 5 8 7 4 6 1 2 3 9 
+
+New best solution found at iteration: 6
+Cost: 499422
+Path: 0 5 8 4 7 6 1 2 3 9 
+
+New best solution found at iteration: 19
+Cost: 491855
+Path: 3 2 1 0 7 4 8 5 6 9 
+
+New best solution found at iteration: 35
+Cost: 486180
+Path: 3 2 8 7 4 1 6 5 0 9 
+
+New best solution found at iteration: 38
+Cost: 473917
+Path: 3 2 8 4 7 1 6 5 0 9 
