@@ -5,7 +5,7 @@ namespace QAP
 {
     internal class Program
     {
-        private const string Path = @"c:\users\alex\documents\GitHub\ACO-QAP\QAP\QAP\txt\";
+        private const string Path = @"c:\users\alex\documents\GitHub\QAP\QAP\txt\";
         private static AlgorithmActor _actor;
 
         private static void Initialize()
@@ -18,7 +18,7 @@ namespace QAP
             Initialize();
 
             _actor.Load(Path + "MatrixData.txt", Path + "BestPathes.txt");
-            _actor.Save();
+            _actor.Save(Path + "BestPathes.txt");
         }
     }
 }

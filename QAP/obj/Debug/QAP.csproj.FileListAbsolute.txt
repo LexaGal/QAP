@@ -1,0 +1,19 @@
+c:\users\alex\documents\visual studio 2012\Projects\QAP\QAP\bin\Debug\QAP.exe.config
+c:\users\alex\documents\visual studio 2012\Projects\QAP\QAP\obj\Debug\QAP.csprojResolveAssemblyReference.cache
+c:\users\alex\documents\visual studio 2012\Projects\QAP\QAP\bin\Debug\QAP.exe
+c:\users\alex\documents\visual studio 2012\Projects\QAP\QAP\bin\Debug\QAP.pdb
+c:\users\alex\documents\visual studio 2012\Projects\QAP\QAP\obj\Debug\QAP.exe
+c:\users\alex\documents\visual studio 2012\Projects\QAP\QAP\obj\Debug\QAP.pdb
+C:\Users\Alex\Documents\GitHub\QAP\QAP\bin\Debug\QAP.exe.config
+C:\Users\Alex\Documents\GitHub\QAP\QAP\obj\Debug\QAP.exe
+C:\Users\Alex\Documents\GitHub\QAP\QAP\obj\Debug\QAP.pdb
+C:\Users\Alex\Documents\GitHub\QAP\QAP\bin\Debug\QAP.exe
+C:\Users\Alex\Documents\GitHub\QAP\QAP\bin\Debug\QAP.pdb
+C:\Users\Alex\Documents\GitHub\QAP\QAP\obj\Debug\QAP.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\ACO-QAP\QAP\QAP\bin\Debug\QAP.exe.config
+C:\Users\Alex\Documents\GitHub\ACO-QAP\QAP\QAP\obj\Debug\QAP.exe
+C:\Users\Alex\Documents\GitHub\ACO-QAP\QAP\QAP\obj\Debug\QAP.pdb
+C:\Users\Alex\Documents\GitHub\ACO-QAP\QAP\QAP\bin\Debug\QAP.exe
+C:\Users\Alex\Documents\GitHub\ACO-QAP\QAP\QAP\bin\Debug\QAP.pdb
+C:\Users\Alex\Documents\GitHub\ACO-QAP\QAP\QAP\obj\Debug\QAP.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\QAP\QAP\bin\Debug\Grsu.Lab.Aoc.Contracts.dll

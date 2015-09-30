@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using QAP.Classes;
 using QAP.Interfaces;
 
 namespace QAP.Classes
 {
-    internal class AntAlgorithm : IAntAlgorithm
+    internal class AntAlgorithm : IAntAlgorithm, IPathGenerator, IDataReader, ILogger
     {
-        public bool Finished;
-        public string PathIn;
-        public string PathOut;
-        public int PheromoneIncrement;
-        public int ExtraPheromoneIncrement;
-        public int NIterations;
-        public int NAnts;
-        public int PathCost;
-        public int BestPathCost = int.MaxValue;
-        public int NoUpdatesLimit;
+        public bool Finished { get; private set; }
+        public string PathIn { get; private set; }
+        public string PathOut { get; private set; }
+        public int PheromoneIncrement { get; private set; }
+        public int ExtraPheromoneIncrement { get; private set; }
+        public int NIterations { get; private set; }
+        public int NAnts { get; private set; }
+        public int PathCost { get; private set; }
+        public int BestPathCost { get; private set; }
+        public int NoUpdatesLimit { get; private set; }
         public int[,] DistanceMatrix { get; private set; }
         public int[,] FlowMatrix { get; private set; }
         public int[,] GlobalMemory { get; private set; }
@@ -32,14 +33,14 @@ namespace QAP.Classes
             PathOut = pathOut;
         }
 
+        
+        //==================== Running ============================
+
         public void Start()
         {
-            ReadData();
             InitializeAntColony();
-            InitializeGlobalMemory();
 
             // Ants iterations
-
             int counter = 0;
             for (int iteration = 1; iteration <= NIterations; iteration++)
             {
@@ -48,10 +49,11 @@ namespace QAP.Classes
                     Finished = true;
                     Result = new Tuple<string, List<int>>(String.Format("Finished as there were no updates during {0} iterations",
                         NoUpdatesLimit), BestPath.ToList());
+                    return;
                 }
 
                 // Build a new solution
-                GenerateSolutionPath();
+                GetSolutionPath();
 
                 PathCost = ComputePathCost();
 
@@ -71,7 +73,7 @@ namespace QAP.Classes
 
                     PheromoneIncrement = 1;
 
-                    InitializeGlobalMemory();
+                    ReinitializeGlobalMemory();
                 }
                 else
                 {
@@ -85,6 +87,11 @@ namespace QAP.Classes
             Finished = true;
             Result = new Tuple<string, List<int>>(String.Format("Finished after {0} iterations", NIterations), BestPath.ToList());
         }
+
+        //=========================================================
+
+        
+        //==================== Initializing =======================
 
         public void ReadData()
         {
@@ -168,7 +175,7 @@ namespace QAP.Classes
 
         // memory management
         // (re-) initialization of the memory
-        public void InitializeGlobalMemory()
+        public void ReinitializeGlobalMemory()
         {
             for (int i = 0; i < NAnts; i++)
             {
@@ -181,14 +188,24 @@ namespace QAP.Classes
 
         public void InitializeAntColony()
         {
-            GlobalMemory = new int[NAnts, NAnts];
+            ReadData();
+
+            Finished = false;
+            PathCost = 0;
+            BestPathCost = int.MaxValue;
             Path = new int[NAnts];
             BestPath = new int[NAnts];
+            GlobalMemory = new int[NAnts, NAnts];
+
+            ReinitializeGlobalMemory();
         }
 
-        //==================== QAP unique =========================
+        //=========================================================
 
-        public double GetQapCoefficient()
+
+        //==================== QAP Path Generating ================
+
+        public double GetCoefficient()
         {
             int x10 = 12345;
             int x11 = 67890;
@@ -212,10 +229,10 @@ namespace QAP.Classes
             const int r23 = 2071;
             const double coeff = 4.656612873077393e-10;
 
-            var h = x10/q13;
-            var p13 = (-1)*a13*(x10 - h*q13) - h*r13;
+            int h = x10/q13;
+            int p13 = (-1)*a13*(x10 - h*q13) - h*r13;
             h = x11/q12;
-            var p12 = a12*(x11 - h*q12) - h*r12;
+            int p12 = a12*(x11 - h*q12) - h*r12;
 
             if (p13 < 0)
             {
@@ -237,9 +254,9 @@ namespace QAP.Classes
             }
 
             h = x20/q23;
-            var p23 = (-1)*a23*(x20 - h*q23) - h*r23;
+            int p23 = (-1)*a23*(x20 - h*q23) - h*r23;
             h = x22/q21;
-            var p21 = a21*(x22 - h*q21) - h*r21;
+            int p21 = a21*(x22 - h*q21) - h*r21;
 
             if (p23 < 0)
             {
@@ -276,14 +293,14 @@ namespace QAP.Classes
             return h*coeff;
         }
 
-        public int GetIndexForRandomPath(int low, int high)
+        public int GetPermutationalIndex(int low, int high)
         {
-            int index = low + (int) ((high - low + 1)*GetQapCoefficient());
+            int index = low + (int) ((high - low + 1)*GetCoefficient());
             return index;
         }
 
         // generate a random permutation Path   
-        public void GenerateRandomPath(int[] path)
+        public void GeneratePath(int[] path)
         {
             for (int i = 0; i < NAnts; i++)
             {
@@ -292,25 +309,28 @@ namespace QAP.Classes
 
             for (int i = 0; i < NAnts - 1; i++)
             {
-                int x = GetIndexForRandomPath(i, NAnts - 1);
+                int x = GetPermutationalIndex(i, NAnts - 1);
                 int y = path[i];
                 path[i] = path[x];
                 path[x] = y;
             }
         }
 
-        //==========================================================
+        //=========================================================
 
-        // generate a solution with probability of setting Path[i] == j
+
+        //==================== Getting Path =======================
+
+        // generate a solution with probability of setting facility j in Path[i] 
         // proportionnal to GlobalMemory[i, j]
-        public void GenerateSolutionPath()
+        public void GetSolutionPath()
         {
             int[] nextI = new int[NAnts];
             int[] nextJ = new int[NAnts];
             int[] sumTrace = new int[NAnts];
 
-            GenerateRandomPath(nextI);
-            GenerateRandomPath(nextJ);
+            GeneratePath(nextI);
+            GeneratePath(nextJ);
 
             for (int i = 0; i < NAnts; i++)
             {
@@ -322,10 +342,12 @@ namespace QAP.Classes
 
             for (int i = 0; i < NAnts; i++)
             {
-                int target = GetIndexForRandomPath(0, sumTrace[nextI[i]] - 1);
                 int j = i;
-                int sum = GlobalMemory[nextI[i], nextJ[j]];
 
+                int target = GetPermutationalIndex(0, sumTrace[nextI[i]] - 1);
+                
+                int sum = GlobalMemory[nextI[i], nextJ[j]];
+               
                 while (sum < target)
                 {
                     j++;
@@ -346,10 +368,70 @@ namespace QAP.Classes
             }
         }
 
+        //=========================================================
+
+
+        //==================== Local search =======================
+
+        // Scans the neighbourhood at most twice
+        // Perform improvements as soon as they are found
+        public void LocalSearch()
+        {
+            // set of moves, numbered from 0 to index
+            int[] move = new int[NAnts*(NAnts - 1)/2];
+            int nMoves = 0;
+
+            for (int i = 0; i < NAnts - 1; i++)
+            {
+                for (int j = i + 1; j < NAnts; j++)
+                {
+                    move[nMoves++] = NAnts*i + j;
+                }
+            }
+
+            bool isImproved = true;
+
+            for (int scan = 0; scan < 2 && isImproved; scan++)
+            {
+                isImproved = false;
+                
+                for (int i = 0; i < nMoves - 1; i++)
+                {
+                    int x = GetPermutationalIndex(i + 1, nMoves - 1);
+                    int y = move[i];
+                    move[i] = move[x];
+                    move[x] = y;
+                }
+
+                for (int i = 0; i < nMoves; i++)
+                {
+                    int r = move[i]/NAnts;
+                    int s = move[i]%NAnts;
+                    int moveCost = ComputeMoveCost(r, s);
+
+                    if (moveCost < 0)
+                    {
+                        PathCost += moveCost;
+
+                        int y = Path[r];
+                        Path[r] = Path[s];
+                        Path[s] = y;
+
+                        isImproved = true;
+                    }
+                }
+            }
+        }
+
+        //=========================================================
+
+
+        //==================== Computing Costs ====================
+
         // compute the value of move (r -> s) on solution Path
         public int ComputeMoveCost(int r, int s)
         {
-            var d = (DistanceMatrix[r, r] - DistanceMatrix[s, s]) *
+            int d = (DistanceMatrix[r, r] - DistanceMatrix[s, s]) *
                     (FlowMatrix[Path[s], Path[s]] - FlowMatrix[Path[r], Path[r]]) +
                     (DistanceMatrix[r, s] - DistanceMatrix[s, r]) *
                     (FlowMatrix[Path[s], Path[r]] - FlowMatrix[Path[r], Path[s]]);
@@ -382,55 +464,10 @@ namespace QAP.Classes
             return c;
         }
 
-        // local search
-        // Scans the neighbourhood at most twice
-        // Perform improvements as soon as they are found
-        public void LocalSearch()
-        {
-            // set of moves, numbered from 0 to index
-            int[] move = new int[NAnts*(NAnts - 1)/2];
-            var nMoves = 0;
+        //=========================================================
 
-            for (int i = 0; i < NAnts - 1; i++)
-            {
-                for (int j = i + 1; j < NAnts; j++)
-                {
-                    move[nMoves++] = NAnts*i + j;
-                }
-            }
 
-            bool isImproved = true;
-
-            for (int scan = 0; scan < 2 && isImproved; scan++)
-            {
-                isImproved = false;
-                for (int i = 0; i < nMoves - 1; i++)
-                {
-                    int x = GetIndexForRandomPath(i + 1, nMoves - 1);
-                    int y = move[i];
-                    move[i] = move[x];
-                    move[x] = y;
-                }
-
-                for (int i = 0; i < nMoves; i++)
-                {
-                    var r = move[i]/NAnts;
-                    var s = move[i]%NAnts;
-                    int moveCost = ComputeMoveCost(r, s);
-
-                    if (moveCost < 0)
-                    {
-                        PathCost += moveCost;
-
-                        int y = Path[r];
-                        Path[r] = Path[s];
-                        Path[s] = y;
-
-                        isImproved = true;
-                    }
-                }
-            }
-        }
+        //==================== Updates ============================
 
         // memory update
         public void UpdateGlobalMemory()
@@ -445,7 +482,7 @@ namespace QAP.Classes
             if (i == NAnts)
             {
                 PheromoneIncrement++;
-                InitializeGlobalMemory();
+                ReinitializeGlobalMemory();
             }
             else
             {
@@ -465,6 +502,11 @@ namespace QAP.Classes
             }
         }
 
+        //=========================================================
+
+
+        //==================== Logging ============================
+
         public void LogBestPath(int iteration)
         {
             using (TextWriter textWriter = new StreamWriter(PathOut, true))
@@ -479,10 +521,17 @@ namespace QAP.Classes
             }
         }
 
+        //=========================================================
+
+
+        //==================== Finishing ============================
+
         public bool IsFinished(int counter)
         {
             return counter == NoUpdatesLimit;
         }
+
+        //=========================================================
 
     }
 }

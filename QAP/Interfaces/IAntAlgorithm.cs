@@ -2,16 +2,18 @@ namespace QAP.Interfaces
 {
     public interface IAntAlgorithm
     {
+        //Running
         void Start();
-
-        //Initialization
-        void ReadData();
-        void InitializeAntColony();
-        void InitializeGlobalMemory();
         //
 
-        //Generating Solution
-        void GenerateSolutionPath();
+        //Initializations 
+        void InitializeAntColony();
+        void ReinitializeGlobalMemory();
+        //
+
+        //Getting Solution Path
+        void GetSolutionPath();
+        //
 
         //Computing Costs
         int ComputePathCost();
@@ -27,10 +29,6 @@ namespace QAP.Interfaces
         void UpdateGlobalMemory();
         //
 
-        //Logging
-        void LogBestPath(int iteration);
-        //
-        
         //Finishing
         bool IsFinished(int counter);
         //
